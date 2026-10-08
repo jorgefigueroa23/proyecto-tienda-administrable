@@ -1,4 +1,4 @@
-export const money = (n: number | string) => `$ ${Number(n).toLocaleString('es', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+export const money = (n: number | string) => Number(n).toLocaleString("es-PE", { style: "currency", currency: "PEN" });
 
 export const dateTime = (s: string) => new Date(s).toLocaleString('es', { dateStyle: 'short', timeStyle: 'short' });
 
